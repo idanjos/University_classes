@@ -1,0 +1,13 @@
+Professor commented on how the report was done:
+. Alot of literature mistakes throughout the report, like subgraph complete, vertices, optomizado, EXHAUST, so on.
+. Not writing at 2º ciclio degree level :(
+. Missing a solution comparison at the end with version 3
+
+Code related:
+. Code identation, blank lines in between - done
+. Comments in critical areas - done
+. 1 class instead of 3 classes - done
+. Reference of where I got certain pieces
+. remove unrelated content from submission -done 
+
+

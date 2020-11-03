@@ -1,0 +1,33 @@
+ /**
+     * <p>
+     * This is a simple description of the method. . .
+     * </p>
+     *
+     * @param timeout is the amount of delay time milliseconds.
+     * @return the amount of delay time milliseconds.
+     * @see <a href="https://elearning.ua.pt/pluginfile.php/969564/mod_resource/content/3/Practical_Assignment_1920_I.pdf">Assignment Requirements</a>
+     * @since 1.0
+     */
+
+
+Getter
+/**
+     * <p>
+     * This function returns the timeout value of the Worker.
+     * </p>
+     *
+     * @return the amount of delay time milliseconds.
+     * @see <a href="https://elearning.ua.pt/pluginfile.php/969564/mod_resource/content/3/Practical_Assignment_1920_I.pdf">Assignment Requirements</a>
+     * @since 1.0
+     */
+
+Setter
+/**
+     * <p>
+     * This function sets the timeout value of the Worker.
+     * </p>
+     *
+     * @param timeout is the amount of delay time milliseconds.   
+     * @see <a href="https://elearning.ua.pt/pluginfile.php/969564/mod_resource/content/3/Practical_Assignment_1920_I.pdf">Assignment Requirements</a>
+     * @since 1.0
+     */

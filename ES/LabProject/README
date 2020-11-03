@@ -1,0 +1,26 @@
+This Labproject was done by:
+Luis Pais		84702
+Isaac dos Anjos 78191
+
+0) This project requires 
+Spotify/Kafka on port 9092
+Mysql Server 5.7 on port 3307
+Access to the internet
+
+KAFKA:
+sudo docker run -p 2181:2181 -p 9092:9092     --env ADVERTISED_HOST=localhost     --env ADVERTISED_PORT=9092     --env CONSUMER_THREADS=1     --env TOPICS=my-topic,some-other-topic     --env ZK_CONNECT=localhost:2181/root/path     --env GROUP_ID=mymirror     spotify/kafkaproxy
+
+
+
+1) Begin by running the project in Netbeans,
+and access the page localhost:8080
+This page provides the information of airplanes in motion.
+
+2)
+The page /logs provides information of the rest, boot load, errors etc... and  new data acquired.
+
+The page /events are consumed messages from Kafka
+
+The project workflow:
+New airplane appears => Its saved in the database => produce a message under the topic events => this message is consumed by a thread called Event consumer and updates the rest information.
+Same thing applys to the logs to make it possible to display on the Web Application.

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "typeinfo": "cpp",
+        "string.h": "c",
+        "unistd.h": "c",
+        "fifo.h": "c",
+        "textprocmonitor.h": "c",
+        "probconst.h": "c",
+        "cstdlib": "c"
+    }
+}

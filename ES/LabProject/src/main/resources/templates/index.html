@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Icao24</th>
+                        <th scope="col">Departure Airport</th>
+                        <th scope="col">Departure Time</th>
+                        <th scope="col">Arrival Airport</th>
+                        <th scope="col">Arrival Time</th>
+                    </tr>
+                </thead>
+                <tbody id="flights">
+                    <tr th:each="flight : ${flights}">
+                        <td scope="col" th:text="${flight.icao24}"></td>
+                        <td scope="col" th:text="${flight.departureAirport}">Departure Airport</td>
+                        <td scope="col" th:text="${flight.departureTime}">Departure Time</td>
+                        <td scope="col" th:text="${flight.arrivalAirport}">Arrival Airport</td>
+                        <td scope="col" th:text="${flight.arrivalTime}">Arrival Time</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

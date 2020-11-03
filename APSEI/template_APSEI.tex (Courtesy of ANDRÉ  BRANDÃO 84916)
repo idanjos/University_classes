@@ -1,0 +1,109 @@
+\documentclass{article}
+% Margin definition.
+\usepackage[a4paper,total={6.8in, 8.5in}]{geometry}
+\usepackage{parskip}
+\usepackage[bottom]{footmisc}
+% Images.
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+% Table
+\usepackage{array}
+\usepackage[toc,page]{appendix}
+% Links.
+\usepackage[T1,hyphens]{url}
+\usepackage[hidelinks, bookmarks=true]{hyperref}
+% Encoding.
+\usepackage[utf8]{inputenc}
+% Helvetic font.
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+% Header for ua logo.
+\usepackage{fancyhdr}
+% Dots in index.
+\usepackage[titles]{tocloft}
+\renewcommand{\cftsubsubsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsubsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsecfont}{\large\bfseries\scshape}
+\renewcommand{\cftsubsecfont}{\scshape}
+\renewcommand{\cftsubsubsecfont}{\small\scshape}
+\addtolength{\cftsecnumwidth}{5pt}
+\renewcommand*{\HyperDestNameFilter}[1]{\jobname-#1}
+% Dot after number in (sub)sections and in toc.
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{}
+\usepackage[letterspace=45]{microtype}
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}}
+% Hedear with ua logo definition. 
+\pagestyle{fancy}
+\fancyhf{}
+\chead{
+    \includegraphics[width=5in]{./img/header_ua.png}
+}
+\setlength\headheight{45pt}
+% Footer with page number.
+\rfoot{Page \thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+% Rename table of contents title to "Index"
+\renewcommand{\contentsname}{\normalsize Index \vspace{0.6cm}}
+
+\begin{document}
+
+\title{\vspace{-0.9cm}
+       \large\raggedright\textbf{Template for APSEI Report} \\ 
+       \vspace{0.5cm}
+       \normalsize
+       \raggedright\textbf{Author: \hspace{1.1cm} André Brandão} \\ \vspace{0.4cm}
+       \raggedright\textbf{Date: \hspace{1.45cm} 13/02/2019} \\}
+\author{}
+\date{}
+
+\maketitle
+\thispagestyle{fancy}
+
+\vspace{-1.4cm}
+
+\tableofcontents
+
+\newpage
+
+\fontsize{10pt}{13pt}
+\selectfont
+\lsstyle
+
+\section{Objectives}
+
+\section{Section}
+
+This is how you cite something in the references \cite{webtrends}.
+A footnote\footnote{In Unix systems \textit{traceroute} general syntax is as follows: \texttt{traceroute [-I (Use ICMP ECHO)] [ -m max\_ttl ] host.}}} 
+
+\section{Conclusion}
+
+\section{References}
+\begingroup
+\renewcommand{\section}[2]{}
+\begin{thebibliography}{9}
+
+    \vspace{-0.2cm}
+
+\bibitem{webtrends}
+    Simon K.,
+    \textit{Digital trends 2019: Every single stat you need to know about the internet} [Online], \\
+    Available online [25/02/2019]: \url{https://thenextweb.com/contributors/2019/01/30/digital-trends-2019-every-single-stat-you-need-to-know-about-the-internet} \\
+    30, jan. 2019.\\
+
+    \vspace{-0.5cm}
+
+\end{thebibliography}
+\endgroup
+
+\vspace{-0.3cm}
+\section{Appendix}
+
+\vspace{-0.1cm}
+\subsection{Important Notes}
+\label{sec:important_notes}
+
+\end{document}
